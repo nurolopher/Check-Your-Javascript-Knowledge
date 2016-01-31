@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc service
- * @name untitledApp.questionService
+ * @name questionsApp.questionService
  * @description
  * # questionService
- * Factory in the untitledApp.
+ * Factory in the questionsApp.
  */
-angular.module('untitledApp')
+angular.module('questionsApp')
   .factory('questionService', ['$http', function ($http) {
 
     // Public API here

@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name untitledApp.directive:code
+ * @name questionsApp.directive:code
  * @description
  * # code
  */
-angular.module('untitledApp')
+angular.module('questionsApp')
   .directive('code', ['$timeout', function ($timeout) {
     return {
       restrict: 'A',

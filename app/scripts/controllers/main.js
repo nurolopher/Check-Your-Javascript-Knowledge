@@ -2,20 +2,27 @@
 
 /**
  * @ngdoc function
- * @name untitledApp.controller:MainCtrl
+ * @name questionsApp.controller:MainCtrl
  * @description
  * # MainCtrl
- * Controller of the untitledApp
+ * Controller of the questionsApp
  */
-angular.module('untitledApp')
-  .controller('MainCtrl', ['$scope', 'questionService', function ($scope, questionService) {
-    questionService.get().success(function (data) {
+angular.module('questionsApp')
+  .controller('MainCtrl', ['$scope', 'questionService', function($scope, questionService) {
+    questionService.get().success(function(data) {
       $scope.questions = data;
     });
 
-    $scope.showResults = function () {
-      $scope.results = {correctNum: 0, incorrectNum: 0};
-      angular.forEach($scope.questions, function (question) {
+    $scope.getResults = function() {
+      $scope.showResults = true;
+      $scope.results = {
+        correctNum: 0,
+        incorrectNum: 0,
+        inPercentage: function() {
+          return ((this.correctNum / (this.correctNum + this.incorrectNum)) * 100) .toFixed(2);
+        }
+      };
+      angular.forEach($scope.questions, function(question) {
         if (question.answer == question.response) {
           $scope.results.correctNum++;
         } else {

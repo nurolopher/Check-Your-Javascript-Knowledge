@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc overview
- * @name untitledApp
+ * @name questionsApp
  * @description
- * # untitledApp
+ * # questionsApp
  *
  * Main module of the application.
  */
 angular
-  .module('untitledApp', [
+  .module('questionsApp', [
     'ngAnimate'
   ]);

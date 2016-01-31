@@ -31,3 +31,6 @@ Question Format
 ```
 
 You can keep `title` as an empty string if your question has `code` which explains everything.
+
+#git subtree push --prefix dist origin gh-pages
+
