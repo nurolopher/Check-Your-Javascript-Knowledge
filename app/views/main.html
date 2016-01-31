@@ -1,7 +1,7 @@
 <div class="jumbotron">
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
+  <p>
+    Do you think that you know Javascript good enough?<br/>
+    Check Your Javascript Knowledge
   </p>
 </div>
 <div class="row">
@@ -10,8 +10,7 @@
     <pre><code class="javascript">{{question.code}}</code></pre>
     <div class="form-group" ng-repeat="version in question.versions">
       <label>
-        <input type="radio" name="{{question.id}}" ng-model="question.response" value="{{version}}">
-        {{version}}
+        <input type="radio" name="{{question.id}}" ng-model="question.response" value="{{version}}"> {{version}}
       </label>
     </div>
   </div>

@@ -51,5 +51,5 @@ bower_components/
 *.log
 
 build/
-./.tmp
-./.sass-cache
+.tmp/
+.sass-cache/
