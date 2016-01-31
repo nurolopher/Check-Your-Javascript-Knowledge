@@ -56,6 +56,7 @@
   "answer": "\"[object Object]\""
 }, {
   "id": 12,
+  "title": "What are the values of each statement",
   "code": "Number({});\nNumber([]);",
   "versions": ["\"Syntax Error\"", "NaN 0", "NaN NaN", "0 0"],
   "answer": "Nan \n0"
