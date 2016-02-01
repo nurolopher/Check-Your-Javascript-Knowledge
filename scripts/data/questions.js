@@ -11,7 +11,7 @@
   "answer": "\"string\""
 }, {
   "id": 3,
-  "code": "typeof (s['toString']())",
+  "code": "var s=\"\";\ntypeof (s['toString']())",
   "versions": ["\"object\"", "\"function\"", "\"undefined\"", "\"string\""],
   "answer": "\"string\""
 }, {
@@ -48,17 +48,17 @@
   "id": 10,
   "code": "[] + {}",
   "versions": ["\"Syntax Error\"", "0", "\"[object Object]\""],
-  "answer": "0"
+  "answer": "\"[object Object]\""
 }, {
   "id": 11,
   "code": "{} + []",
   "versions": ["\"Syntax Error\"", "0", "\"[object Object]\""],
-  "answer": "\"[object Object]\""
+  "answer": "0"
 }, {
   "id": 12,
   "title": "What are the values of each statement",
   "code": "Number({});\nNumber([]);",
   "versions": ["\"Syntax Error\"", "NaN 0", "NaN NaN", "0 0"],
-  "answer": "Nan \n0"
+  "answer": "Nan 0"
 }
 ]
